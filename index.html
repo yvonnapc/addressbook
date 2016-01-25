@@ -13,46 +13,58 @@
   <body>
     <div class="container">
       <h1>Address Book</h1>
-      <div class="col-md-6">
-        <h2>Add a Contact:</h2>
-        <form id="new-contact">
-          <div class="form-group">
-            <label for="new-first-name">First Name</label>
-            <input type="text" class="form-control" id="new-first-name">
-          </div>
-          <div class="form-group">
-            <label for="lastName">Last Name</label>
-            <input type="text" class="form-control" id="new-last-name">
-          </div>
-          <div class="form-group">
-            <label for="lastName">Street</label>
-            <input type="text" class="form-control" id="street">
-          </div>
-          <div class="form-group">
-            <label for="lastName">City</label>
-            <input type="text" class="form-control" id="city">
-          </div>
-          <div class="form-group">
-            <label for="state">State</label>
-            <input type="text" class="form-control" id="state">
-          </div>
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Add a Contact:</h2>
 
-          <button type="submit" class="btn btn-default">Add</button>
-        </form>
+          <form id="new-contact">
+            <div class="form-group">
+              <label for="new-first-name">First Name</label>
+              <input type="text" class="form-control" id="new-first-name">
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name</label>
+              <input type="text" class="form-control" id="new-last-name">
+            </div>
+            <div id="new-addresses">
+              <div class="form-group">
+                <div class="new-address">
+                  <label for="new-street">Street</label>
+                  <input type="text" class="form-control new-street">
+                </div>
+                <div class="form-group">
+                  <label for="new-city">City</label>
+                  <input type="text" class="form-control new-city">
+                </div>
+                <div class="form-group">
+                  <label for="new-state">State</label>
+                  <input type="text" class="form-control new-state">
+                </div>
+              </div>
+            </div>
 
-        <h3>Contacts:</h3>
-        <ul id="contacts">
-        </ul>
-      </div>
+            <span class="btn btn-primary" id="add-address">Another Address</span>
+            <button type="submit" class="btn btn-default">Add</button>
+          </form>
 
-      <div class="col-md-6">
-        <div id="show-contact">
-          <h2></h2>
+          <h3>Contacts:</h3>
+          <ul id="contacts">
 
-          <p>First name: <span class="first-name"></span></p>
-          <p>Last name: <span class="last-name"></span></p>
+          </ul>
         </div>
+
+        <div class="col-md-6">
+          <div id="show-contact">
+            <h2></h2>
+            <p>First name: <span class="first-name"></span></p>
+            <p>Last name: <span class="last-name"></span></p>
+            <p>Addresses:</p>
+            <ul id="addresses">
+            </ul>
+          </div>
+        </div>
+
       </div>
-  </div>
+    </div>
   </body>
 </html>
