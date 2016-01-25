@@ -9,5 +9,14 @@ describe('Contact', function(){
     var testContact = new Contact("Peter", "Pan");
     expect(testContact.fullName()).to.equal("Peter Pan");
   });
+});
+
+describe('Address', function(){
+  it("created a new address with the given input", function(){
+    var testAddress = new Address("123 Main Street", "Test City", "Test State");
+    expect(testAddress.street).to.equal("123 Main Street");
+    expect(testAddress.city).to.equal("Test City");
+    expect(testAddress.state).to.equal("Test State");
+  });
 
 });
