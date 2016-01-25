@@ -2,7 +2,7 @@
 
 #### _{Brief description of application}, {Date of current version}_
 
-#### By _**{List of contributors}**_
+#### By _**Nic Netzel ( thanks to my pair partners this week, whose names may show up in the commits due to the fact that I worked on this during lunches and was set up as a pair)**_
 
 ## Description
 
